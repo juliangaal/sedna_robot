@@ -19,6 +19,6 @@
     version: kinetic
 - git:
     local-name: ceres_robot
-    uri: https://www.github.com/juliangaal/ceres_robot.git
+    uri: https://www.github.com/juliangaal/sedna_robot.git
     version: kinetic
 
