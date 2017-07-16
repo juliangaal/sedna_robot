@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>ceres_bringup</name>
+  <name>sedna_bringup</name>
   <version>0.1.0</version>
   <description>The sedna_bringup package</description>
 
