@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>ceres_install</name>
+  <name>sedna_install</name>
   <version>0.1.0</version>
   <description>The sedna_install package</description>
 
