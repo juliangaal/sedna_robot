@@ -2,7 +2,7 @@
 <package>
   <name>ceres_bringup</name>
   <version>0.1.0</version>
-  <description>The ceres_bringup package</description>
+  <description>The sedna_bringup package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <maintainer email="gjulian@uos.de">Julian Gaal</maintainer>
