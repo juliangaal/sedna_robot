@@ -1,0 +1,24 @@
+- git:
+    local-name: volksbot_driver
+    uri: https://www.github.com/uos/volksbot_driver.git
+    version: kinetic
+- git:
+    local-name: sick_tim
+    uri: https://www.github.com/uos/sick_tim.git
+    version: kinetic
+- git:
+    local-name: pico_flexx_driver
+    uri: https://github.com/code-iai/pico_flexx_driver.git
+- git:
+    local-name: uos_tools
+    uri: https://www.github.com/uos/uos_tools.git
+    version: kinetic
+- git:
+    local-name: phidgets_drivers
+    uri: https://www.github.com/ros-drivers/phidgets_drivers.git
+    version: kinetic
+- git:
+    local-name: ceres_robot
+    uri: https://www.github.com/juliangaal/ceres_robot.git
+    version: kinetic
+

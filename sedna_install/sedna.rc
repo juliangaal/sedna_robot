@@ -1,0 +1,30 @@
+ceres(){
+  . ${CERES_WORKSPACE}/devel/setup.bash
+  cd ${CERES_WORKSPACE}
+}
+
+ceres-host(){
+  export ROS_HOSTNAME=${HOSTNAME}.funky.uni-osnabrueck.de
+  export ROS_MASTER_URI="http://${ROS_HOSTNAME}:11311"
+}
+
+ceres-client(){
+  if [ -n "$1" ]
+  then
+   # export ROS_HOSTNAME=${HOSTNAME}.informatik.uni-osnabrueck.de
+    export ROS_MASTER_URI="http://$1.funky.uni-osnabrueck.de:11311"
+  else
+    echo "Wrooong! Use the name of the robot as parameter!"
+  fi
+}
+
+ceres-client-ip(){
+  export ROS_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+  if [ -n "$1" ]
+  then
+    export ROS_MASTER_URI="http://$1.funky.uni-osnabrueck.de:11311"
+  else
+    echo "Wrooong! Use the name of the robot as parameter!"
+  fi
+}
+
