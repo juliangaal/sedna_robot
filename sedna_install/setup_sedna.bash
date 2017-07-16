@@ -48,7 +48,7 @@ bashrc_file="$HOME/.bashrc"
 
 if ! grep -q 'sedna.rc' "${bashrc_file}" ; then
   echo 'export SEDNA_WORKSPACE="sedna_ws"' >> ~/.bashrc
-  echo '. ${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
+  echo '. ~/${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
 fi
 
 if ! grep -q 'devel/setup.bash' "${bashrc_file}"; then 
