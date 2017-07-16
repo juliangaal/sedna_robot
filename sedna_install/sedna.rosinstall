@@ -18,7 +18,7 @@
     uri: https://www.github.com/ros-drivers/phidgets_drivers.git
     version: kinetic
 - git:
-    local-name: ceres_robot
+    local-name: sedna_robot
     uri: https://www.github.com/juliangaal/sedna_robot.git
     version: kinetic
 
