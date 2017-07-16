@@ -51,7 +51,7 @@ if ! grep -q 'sedna.rc' "${bashrc_file}" ; then
   echo '. ${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
 fi
 
-if ! grep -q 'devel/setup.bash' "{bashrc_file}"; then 
+if ! grep -q 'devel/setup.bash' "${bashrc_file}"; then 
   echo 'source ~/${SEDNA_WORKSPACE}/devel/setup.bash' >> ~/.bashrc
 fi
 #echo 'export SEDNA_WORKSPACE="sedna_ws"' >> ~/.bashrc
