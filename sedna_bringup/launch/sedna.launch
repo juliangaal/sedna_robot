@@ -1,6 +1,6 @@
 <launch>
   ### Upload Pluto to parameter server
-  <include file="$(find ceres_description)/launch/upload_ceres.launch"/>      	
+  <include file="$(find sedna_description)/launch/upload_sedna.launch"/>      	
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
   <node name="joint_stae_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
     <param name="use_gui" value="false" />
@@ -14,8 +14,8 @@
   <arg name="use_pico_flexx" default="true" />
 
   ### Sensors
-  <include if="$(arg use_volksbot_driver)" file="$(find ceres_bringup)/launch/volksbot.launch"/>
-  <include if="$(arg use_sick_tim)" file="$(find ceres_bringup)/launch/sick_tim551_2050001.launch" ns="sick_tim"/>
-  <include if="$(arg use_imu)" file="$(find ceres_bringup)/launch/imu_single_nodes.launch"/>
-  <include if="$(arg use_pico_flexx)" file="$(find ceres_bringup)/launch/pico_flexx_driver.launch"/>
+  <include if="$(arg use_volksbot_driver)" file="$(find sedna_bringup)/launch/volksbot.launch"/>
+  <include if="$(arg use_sick_tim)" file="$(find sedna_bringup)/launch/sick_tim551_2050001.launch" ns="sick_tim"/>
+  <include if="$(arg use_imu)" file="$(find sedna_bringup)/launch/imu_single_nodes.launch"/>
+  <include if="$(arg use_pico_flexx)" file="$(find sedna_bringup)/launch/pico_flexx_driver.launch"/>
 </launch>
