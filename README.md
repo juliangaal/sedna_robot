@@ -1,6 +1,6 @@
 # Sedna
 
-![alt-text](http://imgur.com/yVEqlvB)
+![alt-text](http://i.imgur.com/yVEqlvB.jpg)
 
 ## Maintainers
 * Julian Gaal | [contact](mailto:gjulian@uos.de)
