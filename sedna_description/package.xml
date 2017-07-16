@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>ceres_description</name>
+  <name>sedna_description</name>
   <version>0.1.0</version>
   <description>The sedna_description package</description>
 
