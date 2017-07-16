@@ -15,7 +15,7 @@ cd ~/sedna_ws
 echo ""
 echo "Pulling .rosinstall script"
 # Pull rosinstall file and executes it
-wstool init src https://raw.githubusercontent.com/juliangaal/segna_robot/kinetic/sedna_install/sedna.rosinstall
+wstool init src https://raw.githubusercontent.com/juliangaal/sedna_robot/kinetic/sedna_install/sedna.rosinstall
 wstool update -t src 
 
 echo ""
@@ -47,7 +47,7 @@ echo "Setup bashrc to include devel/setup.bash and ceres.rc"
 echo 'export SEDNA_WORKSPACE="sedna_ws"' >> ~/.bashrc
 echo '. ${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
 echo '' >> ~/.bashrc
-echo 'source ~/${SEDNA_WORKSPACE}/setup.bash' >> ~/.bashrc
+echo 'source ~/${SEDNA_WORKSPACE}/devel/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
 echo ""
