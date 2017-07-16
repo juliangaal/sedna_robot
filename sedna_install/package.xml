@@ -2,7 +2,7 @@
 <package>
   <name>ceres_install</name>
   <version>0.1.0</version>
-  <description>The ceres_install package</description>
+  <description>The sedna_install package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
