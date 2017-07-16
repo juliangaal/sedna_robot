@@ -44,10 +44,20 @@ catkin_make
 
 echo ""
 echo "Setup bashrc to include devel/setup.bash and ceres.rc"
-echo 'export SEDNA_WORKSPACE="sedna_ws"' >> ~/.bashrc
-echo '. ${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
-echo '' >> ~/.bashrc
-echo 'source ~/${SEDNA_WORKSPACE}/devel/setup.bash' >> ~/.bashrc
+bashrc_file="$HOME/.bashrc"
+
+if ! grep -q 'sedna.rc' "${bashrc_file}" ; then
+  echo 'export SEDNA_WORKSPACE="sedna_ws"' >> ~/.bashrc
+  echo '. ${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
+fi
+
+if ! grep -q 'devel/setup.bash' "{bashrc_file}"; then 
+  echo 'source ~/${SEDNA_WORKSPACE}/devel/setup.bash' >> ~/.bashrc
+fi
+#echo 'export SEDNA_WORKSPACE="sedna_ws"' >> ~/.bashrc
+#echo '. ${SEDNA_WORKSPACE}/src/sedna_robot/sedna_install/sedna.rc' >> ~/.bashrc
+#echo '' >> ~/.bashrc
+#echo 'source ~/${SEDNA_WORKSPACE}/devel/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
 echo ""
