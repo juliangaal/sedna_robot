@@ -23,10 +23,10 @@ and
 and execute them
 
 ## Remote Connection
-We provide a script to do so (see /sedna_install/sedna.rc)
-Add the `.ssh-config` file to your home directory for these commands to work
+We provide a script to do so, see `/sedna_install/sedna.rc`. *Make sure it is sourced in `~/.bashrc`*
+(*Recommended*: Add the `.ssh-config` in `/sedna_install` file to your home directory)
 
-* On client: `ssh -X [insert_robot]`, e.g. `ssh -X blitza.funky.uos.de`
+* On client: `ssh -X zapdos.funky.uos.de`
 * On host:   `sedna-host`
-* On client: `sedna-client-ip [insert_robot]`
+* On client: `sedna-client-ip zapdos`
 * Use rviz on client!
