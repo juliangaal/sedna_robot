@@ -26,7 +26,7 @@ and execute them
 We provide a script to do so (see /sedna_install/sedna.rc)
 Add the `.ssh-config` file to your home directory for these commands to work
 
-* On client: `ssh -X [insert_robot]`, e.g. `ssh -X blitza`
+* On client: `ssh -X [insert_robot]`, e.g. `ssh -X blitza.funky.uos.de`
 * On host:   `sedna-host`
 * On client: `sedna-client-ip [insert_robot]`
 * Use rviz on client!
