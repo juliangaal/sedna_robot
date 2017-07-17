@@ -18,7 +18,7 @@ After that, install everything with the follwing scripts. save them to your mach
 
 and
 
-`wget https://raw.githubusercontent.com/uos/sedna_robot/kinetic/sedna_install/setup_nuc.bash` so set up NUC
+`wget https://raw.githubusercontent.com/uos/sedna_robot/kinetic/[insert_branch]/setup_nuc.bash` so set up NUC
 
 and execute them
 
