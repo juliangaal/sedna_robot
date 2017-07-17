@@ -7,6 +7,13 @@ echo "Complete ros setup"
 cd $HOME
 
 echo ""
+echo "Set correct hostname for connect.rc script to work"
+host=$(hostname)
+if [[ $host != *"funky.uos.de"* ]]; then
+  sudo hostname $host.funky.uos.de
+fi
+
+echo ""
 echo "Install wstool and use it to start .rosinstall process"
 sudo apt install python-wstool
 mkdir -p ~/sedna_ws
