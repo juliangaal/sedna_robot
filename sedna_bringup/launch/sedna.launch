@@ -1,5 +1,5 @@
 <launch>
-  ### Upload Pluto to parameter server
+  ### Upload Sedna to parameter server
   <include file="$(find sedna_description)/launch/upload_sedna.launch"/>      	
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
   <node name="joint_stae_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
@@ -11,11 +11,13 @@
   <arg name="use_volksbot_driver" default="true" />
   <arg name="use_sick_tim" default="true" />
   <arg name="use_imu" default="true" />
-  <arg name="use_pico_flexx" default="true" />
+  <!--arg name="use_pico_flexx" default="true" /-->
+  <arg name="use_ekf" default="true" />
 
   ### Sensors
   <include if="$(arg use_volksbot_driver)" file="$(find sedna_bringup)/launch/volksbot.launch"/>
   <include if="$(arg use_sick_tim)" file="$(find sedna_bringup)/launch/sick_tim551_2050001.launch" ns="sick_tim"/>
   <include if="$(arg use_imu)" file="$(find sedna_bringup)/launch/imu_single_nodes.launch"/>
-  <include if="$(arg use_pico_flexx)" file="$(find sedna_bringup)/launch/pico_flexx_driver.launch"/>
+  <!--include if="$(arg use_pico_flexx)" file="$(find sedna_bringup)/launch/pico_flexx_driver.launch"/-->
+  <include if="$(arg use_ekf)" file="$(find sedna_bringup)/launch/ekf.launch"/>
 </launch>
